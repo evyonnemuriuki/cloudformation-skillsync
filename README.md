@@ -42,6 +42,7 @@ The Skillsync.yaml template is in YAML. The following are the resources that hav
 - Review the template and click "Create".
 - Monitor Stack Creation process. It may take several minutes.
 - A successfully created stack is proved by the status "CREATE_COMPLETE".
+![CloudFormation Stack Creation Complete](screenshots/CF_screenshot.png)
 2. AWS CLI
 - Use the following command on AWS CLI to create the CloudFormation stack.
 ```
