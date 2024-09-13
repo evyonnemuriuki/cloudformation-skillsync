@@ -4,13 +4,11 @@ This project contains a CloudFormation template for provisioning AWS resources. 
 ## Template Overview
 The Skillsync.yaml template is in YAML. The following are the resources that have been created.
 1. **VPC** and its components:
-  - **Internet gateway** attached to the VPC.
-  - **Subnets**:
-    - 2 **public subnets** in two availability zones
-    - 1 **private subnet**
-  - **Route tables**:
-    - **public route table** associated with the public subnets.
-    - **private route table** associated with the private subnet.
+   - **Internet gateway** attached to the VPC.
+   - **Subnets**:
+     - 2 **public subnets** in two availability zones
+   - **Route tables**:
+     - **public route table** associated with the public subnets.
 2. **Security group** allowing RDP (port 3389) and HTTP (port 80) access.
 3. **Launch Template** : Microsoft Windows Server 2022 Base associated with the security group above.
 4. **Load Balancer** - Internet facing
@@ -23,7 +21,8 @@ The Skillsync.yaml template is in YAML. The following are the resources that hav
    - AutoScaling Group Name
    - Launch Template Id
    - Target Group ARN
-
+   - S3BucketName
+10. **S3 Bucket**
 
 ## Prerequisites
 - A code editor tool such as VScode.
